@@ -92,7 +92,7 @@ Evaluated on an **80/20 stratified split** (`800` train / `200` test, `seed = 42
 #### 1. Clone the repository and install Node workspace dependencies
 
 ```bash
-git clone https://github.com/your-username/fairscore.git
+git clone https://github.com/mhsatgit/fairscore.git
 cd fairscore
 npm install
 ```
