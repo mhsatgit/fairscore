@@ -65,6 +65,7 @@ fairscore/
 ├── data/                           # Raw & processed UCI German Credit CSV datasets
 ├── models/                         # Saved .joblib models, feature_names.json & metrics.json
 ├── start-fairscore.bat             # One-click Windows startup script
+├── start-fairscore.sh              # One-click Mac startup script
 ├── turbo.json                      # Turborepo task configuration
 └── package.json                    # Root workspace scripts & dependencies
 ```
