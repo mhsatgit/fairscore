@@ -24,21 +24,21 @@
 - **Bias Mitigation Comparison:** Uses sample reweighing to train a fairness-aware model and visualizes the accuracy–fairness trade-off alongside baseline models.
 - **Interactive Liquid Glass Web UI:** Includes 7 Next.js pages (`Dashboard`, `Credit Prediction`, `Fairness Audit`, `Model Performance`, `Dataset`, `Prediction History`, and `About`) with Recharts visualizations and SQLite prediction logging.
 
-##  Tech Stack
+## Tech Stack
 
 | Category | Technology | Badge & Version | Purpose |
 | :--- | :--- | :--- | :--- |
-| **Frontend** | Next.js (App Router) |  | React framework & routing |
-| **UI Library** | React & React DOM |  | Interactive component architecture |
-| **Language (Web)** | TypeScript |  | Static typing across web & shared packages |
-| **Styling** | Tailwind CSS |  | Utility styling & Liquid Glass design tokens |
-| **Charts & Icons** | Recharts & Lucide React |   | ROC, Radar, Bar & Pie charts + icons |
-| **Backend API** | FastAPI & Uvicorn |   | Async REST API & OpenAPI docs (`/docs`) |
-| **Validation** | Pydantic |  | Request/response schema & cross-field validation |
-| **Machine Learning** | scikit-learn & Joblib |   | Preprocessing pipeline, training & model persistence |
-| **Fairness & Data** | Fairlearn, Pandas & NumPy |    | Fairness auditing, reweighing & tabular data |
-| **Database** | SQLite |  | Local prediction history storage (`predictions.db`) |
-| **Monorepo** | Turborepo & Concurrently |   | Workspace orchestration & dual dev server runner |
+| **Frontend** | Next.js (App Router) | ![Next.js 14.2.35](https://img.shields.io/badge/Next.js-14.2.35-000000?logo=next.js&logoColor=white) | React framework & routing |
+| **UI Library** | React & React DOM | ![React 18.3.1](https://img.shields.io/badge/React-18.3.1-149ECA?logo=react&logoColor=white) ![React DOM 18.3.1](https://img.shields.io/badge/React_DOM-18.3.1-149ECA?logo=react&logoColor=white) | Interactive component architecture |
+| **Language (Web)** | TypeScript | ![TypeScript 5.9.3](https://img.shields.io/badge/TypeScript-5.9.3-3178C6?logo=typescript&logoColor=white) | Static typing across web & shared packages |
+| **Styling** | Tailwind CSS | ![Tailwind CSS 3.4.19](https://img.shields.io/badge/Tailwind_CSS-3.4.19-06B6D4?logo=tailwindcss&logoColor=white) | Utility styling & Liquid Glass design tokens |
+| **Charts & Icons** | Recharts & Lucide React | ![Recharts 2.15.4](https://img.shields.io/badge/Recharts-2.15.4-EF4444) ![Lucide React 0.312.0](https://img.shields.io/badge/Lucide_React-0.312.0-F56565) | ROC, Radar, Bar & Pie charts + icons |
+| **Backend API** | FastAPI & Uvicorn | ![FastAPI 0.115.0](https://img.shields.io/badge/FastAPI-0.115.0-009688?logo=fastapi&logoColor=white) ![Uvicorn 0.30.0](https://img.shields.io/badge/Uvicorn-0.30.0-4051B5) | Async REST API & OpenAPI docs (`/docs`) |
+| **Validation** | Pydantic | ![Pydantic 2.9.0](https://img.shields.io/badge/Pydantic-2.9.0-E92063) | Request/response schema & cross-field validation |
+| **Machine Learning** | scikit-learn & Joblib | ![scikit-learn 1.9.0](https://img.shields.io/badge/scikit--learn-1.9.0-F7931E?logo=scikitlearn&logoColor=white) ![Joblib >=1.3.0](https://img.shields.io/badge/Joblib-%3E%3D1.3.0-777777) | Preprocessing pipeline, training & model persistence |
+| **Fairness & Data** | Fairlearn, Pandas & NumPy | ![Fairlearn >=0.10.0](https://img.shields.io/badge/Fairlearn-%3E%3D0.10.0-008272) ![Pandas >=2.2.0](https://img.shields.io/badge/Pandas-%3E%3D2.2.0-150458?logo=pandas&logoColor=white) ![NumPy >=1.26.0](https://img.shields.io/badge/NumPy-%3E%3D1.26.0-013243?logo=numpy&logoColor=white) | Fairness auditing, reweighing & tabular data |
+| **Database** | SQLite (Python `sqlite3`) | ![SQLite standard library](https://img.shields.io/badge/SQLite-Python_stdlib-003B57?logo=sqlite&logoColor=white) | Local prediction history storage (`predictions.db`) |
+| **Monorepo** | Turborepo & Concurrently | ![Turborepo 2.10.12](https://img.shields.io/badge/Turborepo-2.10.12-EF4444?logo=turborepo&logoColor=white) ![Concurrently 8.2.2](https://img.shields.io/badge/Concurrently-8.2.2-4B5563) | Workspace configuration & dual dev server runner |
 
 ##  Project Structure
 
