@@ -1,0 +1,11 @@
+{
+  "name": "@fairscore/ui",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

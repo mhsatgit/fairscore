@@ -1,0 +1,24 @@
+{
+  "name": "fairscore",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently --kill-others --names API,WEB --prefix-colors red,cyan \"cd apps/api && .venv\\Scripts\\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000\" \"npm run dev --workspace web\"",
+    "dev:web": "npm run dev --workspace web",
+    "dev:api": "cd apps/api && .venv\\Scripts\\python.exe -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000",
+    "build": "npm run build --workspace web",
+    "lint": "npm run lint --workspace web",
+    "test": "npm run test --workspace web",
+    "train": "cd apps/api && python -m ml.train",
+    "setup": "cd apps/api && python -m venv .venv && .venv\\Scripts\\python.exe -m pip install -r requirements.txt"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "next": "^14.2.35",
+    "turbo": "^2.0.0"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
